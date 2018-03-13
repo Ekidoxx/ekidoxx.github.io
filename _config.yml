@@ -1,0 +1,142 @@
+# Global configuration
+
+destination:      "./Output/"
+source:           "./Source/"
+collections_dir:  "./"
+plugins_dir:      "./_plugins"
+layouts_dir:      "./_assets/layouts"
+data_dir:         "./_assets/data"
+includes_dir:     "./_assets"
+
+include:          []
+exclude:          ["_assets/components", "_assets/data", "_assets/layouts"]
+keep_files:       []
+whitelist:        []
+plugins:          []
+
+timezone:         "Europe/Warsaw"
+encoding:         "utf-8"
+
+show_dir_listing: false
+
+
+
+# Build and serve options
+
+host:                127.0.0.1
+port:                4000
+url:                 "https://ekidoxx.github.io"
+baseurl:             "/"
+
+title:               "Piotr Górski, a hobbyist front-end web developer"
+description:         "Personal website of Piotr Górski, a hobbyist front-end web developer"
+author:              "Piotr Górski"
+
+production:          true
+detach:              false
+safe:                false
+quiet:               false
+verbose:             false
+incremental:         false
+strict_front_matter: false
+profile:             null
+
+unpublished:         false
+future:              false
+show_drafts:         false
+limit_posts:         0
+lsi:                 false
+collections:
+  assets:
+    output:          true
+    permalink:       "/:collection/:path"
+  news:
+    output:          true
+    permalink:       "/:collection/:title/"
+  pages:
+    output:          true
+    permalink:       "/:path"
+
+permalink:           "none"
+
+excerpt_separator:   "<!-- [more] -->"
+markdown:            "kramdown"
+markdown_ext:        "md"
+highlighter:         "rouge"
+liquid:
+  error_mode:        "warn"
+kramdown:
+  auto_ids:          true
+  entity_output:     "as_char"
+  toc_levels:        "1..6"
+  smart_quotes:      "lsquo,rsquo,ldquo,rdquo"
+  input:              "GFM"
+  hard_wrap:         false
+  footnote_nr:        1
+  show_warnings:     false
+sass:
+  sass_dir:          "_assets/styles/*"
+  style:             "compressed"
+
+defaults:
+  -
+    scope:
+      type:          "assets"
+    values:
+      layout:        null
+  -
+    scope:
+      type:          "news"
+    values:
+      layout:        "post"
+  -
+    scope:
+      type:          "pages"
+    values:
+      layout:        "page"
+
+
+
+# Custom variables and plugins options
+
+jekyll-minifier:
+  exclude:                    ""
+  preserve_php:               true  # Default: false
+  remove_spaces_inside_tags:  true  # Default: true
+  remove_multi_spaces:        true  # Default: true
+  remove_comments:            true  # Default: true
+  remove_intertag_spaces:     true  # Default: false
+  remove_quotes:              false # Default: false
+  compress_css:               true  # Default: true
+  compress_javascript:        true  # Default: true
+  simple_doctype:             false # Default: false
+  remove_script_attributes:   false # Default: false
+  remove_style_attributes:    false # Default: false
+  remove_link_attributes:     false # Default: false
+  remove_form_attributes:     false # Default: false
+  remove_input_attributes:    false # Default: false
+  remove_javascript_protocol: false # Default: false
+  remove_http_protocol:       false # Default: false
+  remove_https_protocol:      false # Default: false
+  preserve_line_breaks:       false # Default: false
+  simple_boolean_attributes:  false # Default: false
+  compress_js_templates:      false # Default: false
+
+jekyll_timeago:
+  depth:                      2
+  today:                      "today"
+  yesterday:                  "yesterday"
+  tomorrow:                   "tomorrow"
+  and:                        "and"
+  suffix:                     "ago"
+  prefix:                     ""
+  suffix_future:              ""
+  prefix_future:              "in"
+  years:                      "years"
+  year:                       "year"
+  months:                     "months"
+  month:                      "month"
+  weeks:                      "weeks"
+  week:                       "week"
+  days:                       "days"
+  day:                        "day"

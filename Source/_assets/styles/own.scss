@@ -1,0 +1,67 @@
+---
+---
+
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+::selection {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.light-selection::-moz-selection {
+  background-color: rgba(255, 255, 255, 255.1);
+}
+.light-selection::selection {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.unselectable {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+html {
+  font-size: 17px;
+}
+body {
+  min-width: 320px;
+}
+
+#particles {
+  background: url("../images/logo/logo2.png"), linear-gradient(135deg, #F44336, #9C27B0, #2196F3, #8BC34A, #FFC107); // Material colors: Red, purple, blue, light-green, amber
+  background-size: contain, 2000%;
+  background-repeat: no-repeat;
+  animation: rainbow-background 45s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; // easeInOutQuad
+}
+@keyframes rainbow-background {
+  0% { background-position: center, 0% 0%; }
+  25% { background-position: center, 100% 0%; }
+  50% { background-position: center, 100% 100%; }
+  75% { background-position: center, 0% 100%; }
+  100% { background-position: center, 0% 0%; }
+}
+
+.view div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5%;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+  color: rgba(255, 255, 255, 1);
+}
