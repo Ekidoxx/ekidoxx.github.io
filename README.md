@@ -2,6 +2,4 @@
 
 <br />
 
-<p align="center">
-	Just my personal website
-</p>
+<p align="center">Just my personal website</p>

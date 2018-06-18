@@ -1,13 +1,3 @@
-# Own files
-\#\ Inspirations
-
-# Jekyll files
-Output/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-
-# Windows files
 Thumbs.db
 ehthumbs.db
 Desktop.ini

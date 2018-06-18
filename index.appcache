@@ -1,0 +1,22 @@
+CACHE MANIFEST
+# Version: 1.0.0 (20:13, 18.06.2018)
+
+
+
+CACHE:
+index.html
+/assets/styles/main.css
+/assets/images/samsommer-76472-unsplash--optimized.jpg
+/assets/images/FaceMakerGO--optimized.jpg
+/assets/styles/normalize.min.css
+/assets/fonts/roboto-condensed/RobotoCondensed-Regular.ttf
+/assets/fonts/roboto-condensed/RobotoCondensed-Bold.ttf
+
+
+
+NETWORK:
+*
+
+
+
+# FALLBACK:
